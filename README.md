@@ -15,6 +15,7 @@ This code appears to be a class for interacting with LinkedIn. It contains three
 To use this class, you would first need to create an instance of the LinkedIn class. Then, you could call the login method with your email and password to log in to LinkedIn. Once logged in, you could call the bulkScan or singleScan methods to retrieve email addresses from LinkedIn profiles. 
 
 Here is an example:
+
 ```
 # create an instance of the LinkedIn class
 linkedin = LinkedIn()
@@ -41,25 +42,28 @@ To use this class, you would need to have the requests and re modules installed 
 To create an instance of the LinkedIn class, you would use the following code:
 ```
 # create an instance of the LinkedIn class
-linkedin = LinkedIn()```
+linkedin = LinkedIn()
+```
 To log in to LinkedIn, you would need to call the login method and provide your email and password as arguments, like this:
-
 ```
 # log in to LinkedIn
-linkedin.login("myemail@gmail.com", "mypassword")```
+linkedin.login("myemail@gmail.com", "mypassword")
+```
 Once you are logged in, you can use the bulkScan method to retrieve email addresses from a list of LinkedIn profiles. You would need to provide a list of LinkedIn profile URLs as an argument to the bulkScan method, like this:
 
 ```
 # retrieve email addresses from a list of LinkedIn profiles
 profiles = ["https://www.linkedin.com/in/johndoe/", "https://www.linkedin.com/in/janedoe/"]
 emails = linkedin.bulkScan(profiles)
-print(emails)```
+print(emails)
+```
 Alternatively, you can use the singleScan method to retrieve email addresses from a single LinkedIn profile. You would need to provide the URL of the LinkedIn profile as an argument to the singleScan method, like this:
 
 ```
 # retrieve email addresses from a single LinkedIn profile
 email = linkedin.singleScan("https://www.linkedin.com/in/johndoe/")
-print(email)```
+print(email)
+```
 You can also use the class without logging in to LinkedIn, by using the singleScan method with a public LinkedIn profile URL. For example:
 
 ```
@@ -68,4 +72,5 @@ linkedin = LinkedIn()
 
 # retrieve email addresses from a single LinkedIn profile
 email = linkedin.singleScan("https://www.linkedin.com/in/johndoe/")
-print(email)```
+print(email)
+```
